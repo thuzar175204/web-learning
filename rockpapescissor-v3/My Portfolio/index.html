@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            My Pofolio
+        </title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+<body>
+
+    <!--nav bar-->
+    <header>
+        <h1>MyPortfolio</h1>
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        </nav>
+        <span class="material-symbols-outlined icon">
+        menu
+        </span>
+    </header>
+    <aside>
+        <h1>Menu</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        <span class="material-symbols-outlined close">
+        close
+        </span>
+    </aside>
+
+    <main>
+        <!--hero section-->
+
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1>Hello, I'm Thu Zar Win</h1>
+                <p>Aspiring Web Developer & Designer </p>
+                <button>View My Word</button>
+            </div>
+
+        </section>
+        <!--About Section-->
+
+        <section class="about" id="about">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                I'm passionate about creating beautiful and functional websites I specialize in HTML,
+                CSS and JavaScript, and constantly learning tools and framework.
+
+            </p>
+
+        </section>
+
+        <!--Project Section-->
+
+        <section class="projects" id="project">
+            <h1>My Projects</h1>
+           <div class="projects-section">
+             <div class="project">
+                <img src="./img/portfolio image.webp" alt="">
+                <h2>Portfolio Website</h2>
+            </div>
+            <div class="project">
+                 <img src="./img/ecommerce page.jpg" alt="">
+                <h2>E-commerce Homepage</h2>
+
+            </div>
+             <div class="project">
+                 <img src="./img/images gallery.jpg" alt="">
+                <h2>Image Gallery</h2>
+
+            </div>
+             <div class="project">
+                 <img src="./img/music player.jpg" alt="">
+                <h2>Music Player UI</h2>
+
+            </div>
+           </div>
+
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact-section" id="contact">
+            <h1>Contact me</h1>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your message"></textarea>
+                <button>Send Message</button>
+
+
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+        <p>@ 2025 MyPortfolio | Contact with me <a href="">Facebook</a>|<a href="">Telegram</a>|<a href="">TikTok</a></p>
+    </footer>
+    <script>
+      let menu=document.querySelector("header  .icon");
+      let sideBar=document.querySelector("aside");
+      let close=document.querySelector("aside .close");
+      menu.addEventListener("click",()=>{
+        sideBar.classList.add("active");
+      })
+
+       close.addEventListener("click",()=>{
+        sideBar.classList.remove("active");
+      })
+
+    </script>
+    
+</body>
+</html>
