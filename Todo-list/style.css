@@ -1,0 +1,25 @@
+.todo-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.todo-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.todo-date{
+   font-size: 16px;
+}
+
+.delete-btn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+   
+}
